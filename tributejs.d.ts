@@ -91,7 +91,7 @@ export type TributeOptions<T> =
   | TributeCollection<T>
   | {
       // pass an array of config objects
-      collection: Array<TributeCollection<{ [key: string]: any }>>;
+      collection: TributeCollection<T>[];
     };
 
 type TributeElement = Element | NodeList | HTMLCollection | Array<Element>;
